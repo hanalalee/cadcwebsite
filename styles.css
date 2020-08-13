@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: white;
+    font-family: 'Roboto Condensed', 'san-serif';
+    font-weight: 500;
+}
+
+h2{
+    color: white;
+}
+
+p{
+    color:white;
+}
+
+#home{
+    display: table;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    background: url(./images/homeimage.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.landing-text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 17%;
+}
+
+.landing-text h1{
+    font-size: 100px;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+}
+
+.social-text{
+    border-right: 10px, solid, white;
+    background-color: teal;
+}
+
+.social-text h2{
+    font-size: 30px;
+}
+
+.social-icons{
+    background-color: tomato;
+}
+
+.fa{
+    font-size: 30px;
+    color:white;
+    transition: 0.5s;
+}
+
+.fa:hover{
+    color: #DCD02C;
+    text-decoration: none;
+}
+
+.credits-text{
+    te
+}
