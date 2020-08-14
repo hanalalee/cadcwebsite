@@ -12,6 +12,7 @@
         <!-- Styles/Fonts -->
         <link href="styles.css" type="text/css" rel="stylesheet">
         <link href="navbar.css" type="text/css" rel="stylesheet">
+        <link href="layout.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
 
@@ -19,51 +20,51 @@
     </head>
 
     <body>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark scrolling-navbar bg-transparent">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-default scrolling-navbar">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="toggle-container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="./index.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT US</a>
+                            <a class="nav-link" href="./about.html">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">MEMBERS</a>
+                            <a class="nav-link" href="./members.html">MEMBERS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">HISTORY</a>
+                            <a class="nav-link" href="./history.html">HISTORY</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link" href="./contact.html">CONTACT</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            
         </nav>
 
         <div id="home">
-            <div class="landing-text">
-                <h1>CADC</h1>
-                <h2>Chinese Association Dance Crew</h2>
-                <p>mission statement blaksfhksjfdsfnksdfsdifnjdfnsdkfjs</p>
+            <div class="header-container">
+                <img id="header-image" src="./images/header.png">
             </div>
         </div>
 
         <footer class="container-fluid">
-            <div class="row">
-                <div class="col social-text text-right align-self-center">
-                    <h2>social media</h2>
+            <div class="row row-eq-height justify-content-center align-self-center">
+                <div class="col-3 social-text">
+                    <h2>FOLLOW US</h2>
                 </div>
-                <div class="col social-icons text-left align-self-center">
-                    <a href="#" target="_blank" class="fa fa-facebook"></a>
-                    <a href="#" target="_blank" class="fa fa-instagram"></a>
-                    <a href="#" target="_blank" class="fa fa-twitter"></a>
+                <div class="col-5 social-icons">
+                    <a href="https://www.facebook.com/cadancecrew/" target="_blank" class="fa fa-facebook-square"></a>
+                    <a href="https://www.instagram.com/cadancecrew/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://www.twitter.com/cadancecrew/" target="_blank" class="fa fa-twitter-square"></a>
+                    <a href="https://www.youtube.com/channel/UCd62MZO29jD9WYK3q_PwELA" target="_blank" class="fa fa-youtube-play"></a>
                 </div>    
             </div>
             <div class="credits-text">

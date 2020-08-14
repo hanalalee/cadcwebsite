@@ -1,0 +1,38 @@
+.parallax-banner{
+    display: table;
+    height: 60vh;
+    position: relative;
+    width: 100%;
+}
+
+/* .banner-about{
+    background: url(./images/contactbanner.jpg) no-repeat bottom fixed;
+    background-size: cover;
+} */
+
+.banner-members{
+    background: url(./images/memberbanner.jpg) no-repeat fixed;
+    background-position: 23% 78%;
+    background-size: cover;
+}
+
+.banner-history{
+    background: url(./images/historybanner2.jpg) no-repeat bottom fixed;
+    background-size: cover;
+}
+
+.banner-contact{
+    background: url(./images/contactbanner.jpg) no-repeat bottom fixed;
+    background-size: cover;
+}
+
+
+
+
+.main-body{
+    background-color: black;
+    height: 100%;
+}
+
+.text-wrapper{
+}
