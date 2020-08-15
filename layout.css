@@ -26,13 +26,71 @@
     background-size: cover;
 }
 
-
-
-
-.main-body{
-    background-color: black;
+.banner-text{
+    position: relative;
     height: 100%;
+    text-align: center;
+    top: 28vh;
 }
 
-.text-wrapper{
+.banner-line{
+    border: 1px solid white;
+    width: 33%;
+    margin: 0 auto;
+}
+
+.banner-text h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+.body-container{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    text-align: center;
+}
+
+.contact-form{
+    margin: 0px 200px;
+    padding: 30px;
+    display: flex;
+}
+
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+
+.input-fields, .msg-fields{
+    width: 48%;
+}
+
+.input-fields input, .msg-fields textarea{
+    margin: 20px 0;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    color: white;
+    resize: none;
+    width: 100%;
+}
+
+.msg-fields textarea{
+    height: 200px;
+}
+
+::placeholder{
+    color:white;
+}
+
+.btn{
+    background: white;
+    width: 100%;
 }
