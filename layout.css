@@ -11,24 +11,22 @@
 } */
 
 .banner-members{
-    background: url(./images/memberbanner.jpg) no-repeat fixed;
-    background-position: 23% 78%;
+    background: url(./images/memberbanner.jpg) no-repeat center fixed;
     background-size: cover;
 }
 
 .banner-history{
-    background: url(./images/historybanner2.jpg) no-repeat bottom fixed;
+    background: url(./images/historybanner2.jpg) no-repeat center fixed;
     background-size: cover;
 }
 
 .banner-contact{
-    background: url(./images/contactbanner.jpg) no-repeat bottom fixed;
+    background: url(./images/contactbanner.jpg) no-repeat center fixed;
     background-size: cover;
 }
 
 .banner-text{
     position: relative;
-    height: 100%;
     text-align: center;
     top: 28vh;
 }
@@ -49,6 +47,90 @@
     background-color: black;
     margin: 0;
     padding: 0;
+}
+
+
+/* MEMBER CSS */
+.class-nav{
+    text-align: center;
+}
+
+.class-nav li{
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+
+.horizontal-container{
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.class-container{
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    text-align: center;
+}
+
+.image-cont{
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 250px;
+    height: 330px;
+    position: relative;
+}
+
+.image-cont img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image-overlay:hover{
+    opacity: 1;
+    backdrop-filter: blur(5px);
+}
+
+.image-overlay > * {
+    transform: translateY(20px);
+    transition: transform  0.3s;
+}
+
+.image-overlay:hover > * {
+    transform: translateY(0);
+}
+
+
+
+/* CONTACT CSS */
+
+.email-container{
+    padding-top: 80px;
+}
+
+.email-container .fa{
+    padding: 0;
+    padding-right: 15px;
+    margin: 0;
+    font-size: 25px;
 }
 
 form{
