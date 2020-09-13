@@ -3,6 +3,7 @@
     padding:0;
     box-sizing: border-box;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .body{
@@ -28,7 +29,15 @@ h2{
 
 h3{
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Condensed', 'san-serif';
+    font-weight: 300;
+    padding: 0px;
+    margin: 0px;
+}
+
+h4{
+    color: white;
+    font-family: 'Cabin', sans-serif;
     font-style: italic;
     font-weight: 300;
     padding: 0px;
@@ -37,7 +46,7 @@ h3{
 
 p{
     color:white;
-    font-family: 'Roboto Condensed', 'san-serif';
+    font-family: 'Cabin', sans-serif;
     font-weight: 300;
     padding: 0px;
     margin: 0px;
@@ -62,32 +71,32 @@ p{
 
 #header-image{
     width: 370px;
-    transition: 0.4s;
+/*     transition: 0.4s; */
 }
 
-#header-image:hover{
+/* #header-image:hover{
     transform: scale(1.2);
-}
+} */
 
 footer{
     width: 100%;
     background-color: black;
     padding-top: 70px;
     padding-bottom: 30px;
-
-}
-
-.social-text{
-    border-right: 10px, solid, white;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-right: 3px solid white;
+
 }
 
-.social-text h2{
-    font-size: 25px;
-    letter-spacing: 1.5px;
+footer h3{
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.footer-split{
+    height: 0px;
+    width: 120px;
+    margin: 20px auto 25px auto;
+    border: solid white 1px;	
 }
 
 .social-icons{
@@ -98,17 +107,19 @@ footer{
     font-size: 40px;
     color:white;
     padding: 13px 40px;
+    transition: 0.5s;
 }
 
 .fa:hover{
     color: #DCD02C;
-    transition: 0.5s;
     text-decoration: none;
+    transform: scale(1.3);
+
 }
 
 .credits-text{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 90px;
 }
 
 .credits-text p{

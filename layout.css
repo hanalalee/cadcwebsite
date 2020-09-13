@@ -5,10 +5,15 @@
     width: 100%;
 }
 
-/* .banner-about{
-    background: url(./images/contactbanner.jpg) no-repeat bottom fixed;
+.banner-about{
+    background: url(./images/aboutbanner.jpg) no-repeat center fixed;
     background-size: cover;
-} */
+}
+
+.banner-recruit{
+    background: url(./images/contactbanner.jpg) no-repeat center fixed;
+    background-size: cover;
+}
 
 .banner-members{
     background: url(./images/memberbanner.jpg) no-repeat center fixed;
@@ -49,130 +54,165 @@
     padding: 0;
 }
 
+.text-contain{
+    padding: 60px 120px;
+}
+
+/* ABOUT US */
+
+#mission{
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+#mission h2{
+    padding-bottom: 10px;
+}
+
+.title-split{
+    height: 0px;
+    width: 200px;
+    margin: 0px auto 0px auto;
+    border-bottom: solid white 1px;	
+    padding-top: 5px;
+}
+
+#mission h4{
+    padding-top: 30px;
+}
+
+#values h2{
+    text-align: center;
+}
+
+#family{
+
+}
+
+#tradition{
+    text-align: right;
+}
+
+
+/* RECRUITMENT */
+
 
 /* MEMBER CSS */
-.class-nav{
-    text-align: center;
-}
 
-.class-nav li{
-    display: inline-block;
-    list-style-type: none;
-    text-decoration: none;
-    color: white;
-}
-
-
-.horizontal-container{
-    overflow-x: scroll;
-    white-space: nowrap;
-}
-
-.class-container{
-    width: 100vw;
-    height: 100vh;
-    display: inline-block;
-    text-align: center;
-}
-
-.image-cont{
-    margin: 0 auto;
-    margin-bottom: 30px;
-    width: 250px;
-    height: 330px;
-    position: relative;
-}
-
-.image-cont img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.image-overlay{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    display: flex; 
-    flex-direction: column;
+/* #members-heading{
+    display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
-    transition: opacity 0.25s;
+    text-transform: uppercase;
+    padding: 50px 0 60px 0;
+    letter-spacing: 2px;
+}
+  
+#members-heading:after, #members-heading:before {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background: white;
+    margin: 0 20px;
+  } */
+
+.class-heading{
+    padding: 130px 0px 50px 0px;
+    text-align: center;
 }
 
-.image-overlay:hover{
-    opacity: 1;
-    backdrop-filter: blur(5px);
+.header-split{
+    margin: 15px auto;
+    height: 0px;
+    border-bottom: dotted white 7px;
 }
 
-.image-overlay > * {
-    transform: translateY(20px);
-    transition: transform  0.3s;
+.header-split-two{
+    margin: 0 auto;
+    height: 0px;
+    border-bottom: solid #AB8000 5px;	
+    padding-top: 8px;
 }
 
-.image-overlay:hover > * {
-    transform: translateY(0);
+#rho-class .header-split{
+    width: 40px;
 }
 
+#rho-class .header-split-two{
+    width: 250px;
+}
 
+#sigma-class .header-split{
+    width: 40px;
+}
+
+#sigma-class .header-split-two{
+    width: 210px;
+}
+
+#tau-class .header-split{
+    width: 40px;
+}
+
+#tau-class .header-split-two{
+    width: 210px;
+}
+
+#upsilon-class .header-split{
+    width: 40px;
+}
+
+#upsilon-class .header-split-two{
+    width: 200px;
+}
 
 /* CONTACT CSS */
 
 .email-container{
-    padding-top: 80px;
+}
+
+.email-container h3{
+    display: flex;
+    align-items: center;
+/*     background-color: sandybrown; */
+    font-size: 23px;
+    letter-spacing: 1px;
 }
 
 .email-container .fa{
-    padding: 0;
-    padding-right: 15px;
-    margin: 0;
+    padding: 5px 13px;
+/*     background-color: rosybrown; */
     font-size: 25px;
 }
 
-form{
-    text-align: center;
-}
 
-.contact-form{
-    margin: 0px 200px;
-    padding: 30px;
-    display: flex;
-}
+@media (max-width: 991px){
+    .text-contain{
+        padding: 60px 80px;
+    }
 
-.input-fields{
-    display: flex;
-    flex-direction: column;
-    margin-right: 10%;
-}
+    .email-container{
+        text-align: center;
+    }
 
-.input-fields, .msg-fields{
-    width: 48%;
-}
+    .email-container h3{
+        justify-content: center;
+    }
+ }
 
-.input-fields input, .msg-fields textarea{
-    margin: 20px 0;
-    background-color: transparent;
-    border: 0;
-    border-bottom: 2px solid white;
-    padding: 10px;
-    color: white;
-    resize: none;
-    width: 100%;
-}
+/* 
+ @media (max-width: 576px){
+    .email-container{
+    }
 
-.msg-fields textarea{
-    height: 200px;
-}
+    .email-container h3{
+        font-size: 20px;
+    }
 
-::placeholder{
-    color:white;
-}
-
-.btn{
-    background: white;
-    width: 100%;
-}
+    .email-container .fa{
+        padding: 0;
+        padding-right: 7px;
+        margin: 0;
+        font-size: 20px;
+    }
+  } */

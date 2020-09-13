@@ -3,7 +3,7 @@
 }
 
 .toggle-container{
-    padding: 5.5px 5px;
+    margin: 5.5px 5px;
 }
 .navbar-toggler{
     border: 1px solid white;
@@ -28,4 +28,36 @@
 .navbar-nav > li > a:hover{
     color: #DCD02C;
     transition: 0.5s;
+}
+
+
+.class-nav{
+    text-align: center;
+    height: 200px;
+    overflow: hidden;
+    padding-top: 100px;
+    
+}
+
+.class-nav li{
+    list-style-type: none;
+    padding: 10px 40px;
+    display: inline-block;
+}
+
+.class-nav a{
+    border: solid white 1px;
+    padding: 3px 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 17pt;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: 0.5s;
+}
+
+.class-nav a:hover{
+    background-color: #AB8000;
+    border: solid #AB8000 1px;
+    border-radius: 5px;
 }
