@@ -33,10 +33,9 @@
 
 .class-nav{
     text-align: center;
-    height: 200px;
+    height: 30vh;
+    padding-top: 11vh;
     overflow: hidden;
-    padding-top: 100px;
-    
 }
 
 .class-nav li{

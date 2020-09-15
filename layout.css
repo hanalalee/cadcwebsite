@@ -1,3 +1,11 @@
+.body-container{
+    background-color: black;
+    margin: 0;
+    padding: 60px 120px;
+}
+
+/* BANNERS */
+
 .parallax-banner{
     display: table;
     height: 60vh;
@@ -48,15 +56,86 @@
     font-weight: bolder;
 }
 
-.body-container{
-    background-color: black;
-    margin: 0;
-    padding: 0;
+
+
+/* HOME PAGE */
+.home-container{
+    width: 100%;
+    background: url(./images/homeback.jpeg) no-repeat center center fixed;
+    background-size: cover;
 }
 
-.text-contain{
-    padding: 60px 120px;
+.home-carousel{
+    overflow: hidden;
+    height: 100vh;
 }
+
+.home-slider{
+    height: 100%; 
+    display: flex;
+    width: 400vw;
+    transition: all 0.5s;
+}
+
+.home-slider section{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slide-one{
+}
+
+#slide-one img, #slide-two img, #slide-three img, #slide-four img{
+    width: 370px;
+}
+
+.home-controls .arrow{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.home-controls .material-icons {
+    color: white;
+    font-size: 50px;
+    transform: translateY(-50%);
+}
+
+.arrow.left{
+    left: 40px;
+}
+
+.arrow.right{
+    right: 40px;
+}
+
+.home-controls ul{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.home-controls ul li{
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    border: solid white 2px;
+    border-radius: 100%;
+    background-color: white;
+    cursor: pointer;
+}
+
+ .home-controls ul li.selected{
+     background: transparent;
+ }
+
 
 /* ABOUT US */
 
@@ -93,36 +172,16 @@
     text-align: right;
 }
 
-
-/* RECRUITMENT */
-
-
 /* MEMBER CSS */
 
-/* #members-heading{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    padding: 50px 0 60px 0;
-    letter-spacing: 2px;
-}
-  
-#members-heading:after, #members-heading:before {
-    content: '';
-    width: 50px;
-    height: 2px;
-    background: white;
-    margin: 0 20px;
-  } */
-
 .class-heading{
-    padding: 130px 0px 50px 0px;
+    padding: 100px 0px 30px 0px;
     text-align: center;
 }
 
 .header-split{
     margin: 15px auto;
+    width: 40px;
     height: 0px;
     border-bottom: dotted white 7px;
 }
@@ -132,38 +191,7 @@
     height: 0px;
     border-bottom: solid #AB8000 5px;	
     padding-top: 8px;
-}
-
-#rho-class .header-split{
-    width: 40px;
-}
-
-#rho-class .header-split-two{
     width: 250px;
-}
-
-#sigma-class .header-split{
-    width: 40px;
-}
-
-#sigma-class .header-split-two{
-    width: 210px;
-}
-
-#tau-class .header-split{
-    width: 40px;
-}
-
-#tau-class .header-split-two{
-    width: 210px;
-}
-
-#upsilon-class .header-split{
-    width: 40px;
-}
-
-#upsilon-class .header-split-two{
-    width: 200px;
 }
 
 /* CONTACT CSS */
@@ -184,6 +212,57 @@
 /*     background-color: rosybrown; */
     font-size: 25px;
 }
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    background-color: black;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    text-align: center;
+
+}
+
+footer h3{
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.footer-split{
+    height: 0px;
+    width: 120px;
+    margin: 20px auto 25px auto;
+    border: solid white 1px;	
+}
+
+.social-icons{
+    text-align: center;
+}
+
+.fa{
+    font-size: 40px;
+    color:white;
+    padding: 13px 40px;
+    transition: 0.5s;
+}
+
+.fa:hover{
+    color: #DCD02C;
+    text-decoration: none;
+    transform: scale(1.3);
+
+}
+
+.credits-text{
+    text-align: center;
+    padding-top: 90px;
+}
+
+.credits-text p{
+    margin: 0;
+}
+
 
 
 @media (max-width: 991px){
