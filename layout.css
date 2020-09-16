@@ -77,7 +77,7 @@
     transition: all 0.5s;
 }
 
-.home-slider section{
+.slide{
     flex-basis: 100%;
     display: flex;
     justify-content: center;
@@ -87,9 +87,10 @@
 #slide-one{
 }
 
-#slide-one img, #slide-two img, #slide-three img, #slide-four img{
+#slide-one img{
     width: 370px;
 }
+
 
 .home-controls .arrow{
     position: absolute;
@@ -123,8 +124,8 @@
 }
 
 .home-controls ul li{
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 13px;
     margin: 10px;
     border: solid white 2px;
     border-radius: 100%;
