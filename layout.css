@@ -7,10 +7,9 @@
 /* BANNERS */
 
 .parallax-banner{
-    display: table;
-    height: 60vh;
     position: relative;
-    width: 100%;
+    height: 60%;
+    max-width: 100%;
 }
 
 .banner-about{
@@ -70,9 +69,12 @@
 
 /* HOME PAGE */
 .home-container{
+    overflow: hidden;
     width: 100%;
     background: url(./images/homeback.jpeg) no-repeat center center fixed;
     background-size: cover;
+    height: 100vh;
+    position: relative;
 }
 
 .home-carousel{
@@ -114,12 +116,34 @@
     opacity: 0.4;
     letter-spacing: 2px;
     font-size: 35px;
-    margin-top: 35px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .event-section{
     margin: 10px 40px 30px 40px;
+}
+
+#zoom-link{
+    margin-top: 60px;
+}
+
+#zoom-link p{
+    margin-top: 10px;
+    border: solid white 1px;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+#zoom-link p:hover{
+    background-color: white;
+    color:rgba(0, 0, 0, 0.5);
+}
+
+.home-controls{
+    background-color: rosybrown;
 }
 
 .home-controls ul{
@@ -251,10 +275,7 @@
 
 #contact-info h4{
     margin-top: 40px;
-    padding: 15px 30px;
-/*     display: inline-block;
-    border-radius: 5px;
-    border: solid white 1px; */
+    padding-top: 15px;
 }
 
 /* FOOTER */
@@ -310,18 +331,14 @@ footer .fa:hover{
 
 @media (max-width: 991px){
     .slide-container{
-        width: 580px;
-        height: 400px;
+        width: 590px;
+        height: 450px;
     }
 
     .slide-title{
         font-size: 33px;
         margin-top: 25px;
         margin-bottom: 25px;
-    }
-
-    .event-section h4{
-        font-size: 20px;
     }
 
     .body-container{
@@ -335,7 +352,18 @@ footer .fa:hover{
         height: 400px;
     }
 
-    
+    .slide-title{
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .event-section h4{
+        font-size: 20px;
+    }
+
+    .event-info p, .event-section p{
+        font-size: 13px;
+    }
 
     .body-container{
         padding: 60px 80px;
@@ -363,6 +391,10 @@ footer .fa:hover{
         font-size: 20px;
     }
 
+    #zoom-link{
+        margin-top: 40px;
+    }    
+
     .carousel{
         margin: 0 auto;
         margin-top: 50px;
@@ -376,6 +408,75 @@ footer .fa:hover{
 
     
     footer .fa{
-        padding: 20px  60px;
+        padding: 20px 60px;
+    }
+}
+
+@media (max-width: 480px){
+    .body-container{
+        padding: 60px 40px;
+    }
+
+    #slide-one img{
+        width: 310px;
+    }
+
+    .slide-container{
+        width: 300px;
+        height: 370px;
+    }
+
+    .slide-title{
+        font-size: 27px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    #zoom-link{
+        margin-top: 5px;
+    } 
+
+    .home-controls ul{
+        bottom: 15px;
+    }
+
+    .event-section h4{
+        font-size: 18px;
+    }
+
+    .event-info p, .event-section p{
+        font-size: 13px;
+    }
+
+    .banner-text h1{
+        font-size: 35px;
+    }
+    
+    .banner-line{
+        border: 1px solid white;
+        width: 250px;
+        margin: 0 auto;
+    }
+    
+    .banner-text h1{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: bolder;
+    }
+
+    .carousel{
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 100%;
+    }
+    
+    .carousel-item{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        height: 15px;
+        width: 15px;
     }
 }

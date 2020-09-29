@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
 }
 
+html, body{
+    height: 100%;
+}
+
 h1{
     color: white;
     font-family: 'Roboto Condensed', 'san-serif';

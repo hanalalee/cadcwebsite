@@ -46,7 +46,7 @@
 
 .class-nav a{
     border: solid white 1px;
-    padding: 3px 10px;
+    padding: 3px 18px;
     text-decoration: none;
     color: white;
     border-radius: 5px;
@@ -59,4 +59,13 @@
     background-color: #AB8000;
     border: solid #AB8000 1px;
     border-radius: 5px;
+}
+
+@media (max-width: 480px){
+    .class-nav{
+        text-align: center;
+        height: 50vh;
+        padding-top: 11vh;
+        overflow: hidden;
+    }
 }
