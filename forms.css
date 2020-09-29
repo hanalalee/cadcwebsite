@@ -6,16 +6,17 @@ form{
     display: flex;
     flex-direction: column;
 /*     background-color: cadetblue; */
-    padding: 40px 40px;
+    padding-top: 40px;
 }
 
-.contact-form input, textarea{
+.contact-form input, textarea, button{
     margin: 10px 0px;
     padding: 10px 10px;
     font-family: 'Cabin', sans-serif;
     background-color: transparent;
     border: white solid 2px;
-    
+    border-radius: 5px;
+    color: white;
 }
 
 .contact-form input{
@@ -25,3 +26,15 @@ form{
 .contact-form textarea{
     height: 120px;
 }
+
+.contact-form button{
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.contact-form button:hover{
+    background-color: #AB8000;
+    border: solid #AB8000 2px;
+    border-radius: 5px;
+}
+
