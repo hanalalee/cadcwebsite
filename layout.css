@@ -98,9 +98,13 @@
 
 #slide-one img{
     box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.6);
-    width: 370px;
+    width: 420px;
 }
 
+#slide-two img, #slide-three img{
+    box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.6);
+    width: 470px;
+}
 .slide-container{
     box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.6);
     width: 680px;
@@ -109,7 +113,7 @@
     background-color: rgba(145, 126, 196, 0.7);
 }
 
-.slide-title{
+/* .slide-title{
     display: inline-block;
     font-family: 'Oswald', sans-serif;
     color: white;
@@ -123,28 +127,7 @@
 .event-section{
     margin: 10px 40px 30px 40px;
 }
-
-#zoom-link{
-    margin-top: 60px;
-}
-
-#zoom-link p{
-    margin-top: 10px;
-    border: solid white 1px;
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: all 0.5s;
-}
-
-#zoom-link p:hover{
-    background-color: white;
-    color:rgba(0, 0, 0, 0.5);
-}
-
-.home-controls{
-    background-color: rosybrown;
-}
+ */
 
 .home-controls ul{
     position: absolute;
@@ -330,7 +313,7 @@ footer .fa:hover{
 
 
 @media (max-width: 991px){
-    .slide-container{
+/*     .slide-container{
         width: 590px;
         height: 450px;
     }
@@ -339,7 +322,7 @@ footer .fa:hover{
         font-size: 33px;
         margin-top: 25px;
         margin-bottom: 25px;
-    }
+    } */
 
     .body-container{
         padding: 60px 100px;
@@ -347,7 +330,11 @@ footer .fa:hover{
 }
 
 @media (max-width: 758px){
-    .slide-container{
+
+    #slide-two img, #slide-three img{
+        width: 400px;
+    }
+/*     .slide-container{
         width: 530px;
         height: 400px;
     }
@@ -363,7 +350,7 @@ footer .fa:hover{
 
     .event-info p, .event-section p{
         font-size: 13px;
-    }
+    } */
 
     .body-container{
         padding: 60px 80px;
@@ -376,7 +363,11 @@ footer .fa:hover{
         padding: 60px 50px;
     }
 
-    .slide-container{
+    #slide-two img, #slide-three img{
+        width: 360px;
+    }
+
+/*     .slide-container{
         width: 400px;
         height: 400px;
     }
@@ -393,7 +384,7 @@ footer .fa:hover{
 
     #zoom-link{
         margin-top: 40px;
-    }    
+    }  */   
 
     .carousel{
         margin: 0 auto;
@@ -421,7 +412,7 @@ footer .fa:hover{
         width: 310px;
     }
 
-    .slide-container{
+   /*  .slide-container{
         width: 300px;
         height: 370px;
     }
@@ -434,20 +425,25 @@ footer .fa:hover{
 
     #zoom-link{
         margin-top: 5px;
-    } 
+    }  */
 
     .home-controls ul{
         bottom: 15px;
     }
 
-    .event-section h4{
+    #slide-two img, #slide-three img{
+        width: 320px;
+    }
+
+
+    /* .event-section h4{
         font-size: 18px;
     }
 
     .event-info p, .event-section p{
         font-size: 13px;
     }
-
+ */
     .banner-text h1{
         font-size: 35px;
     }

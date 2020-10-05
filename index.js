@@ -5,7 +5,7 @@ var sectionIndex = 0;
 
 function setIndex(){
     document.querySelector('.home-controls .selected').classList.remove('selected');
-    slider.style.transform = 'translate(' + (sectionIndex) * -33 + '%)'};
+    slider.style.transform = 'translate(' + (sectionIndex) * -33.33 + '%)'};
 
 
 document.querySelectorAll('.home-controls li').forEach(function(indicator, ind){
